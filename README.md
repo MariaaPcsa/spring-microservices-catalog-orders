@@ -3,11 +3,7 @@
 > **Stack**: Java 17, Spring Boot 3.3.x, Spring Cloud 2024.0.x, Eureka (Service Discovery), Spring Cloud Gateway (API Gateway), H2 Database (catálogo).
 
 
-- **Discovery Server** (Eureka) para registro e descoberta dos serviços.
-- **Product Catalog Service** para gerenciamento dos produtos.
-- **Order Simulator Service** para simular pedidos.
 
----
 ## Módulos
 - `discovery-server` (porta `8761`): Eureka Server.
 - `product-catalog-service` (porta `8110`): CRUD básico de produtos (`/produtos`) com persistência H2.
