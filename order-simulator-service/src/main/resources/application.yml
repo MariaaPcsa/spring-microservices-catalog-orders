@@ -1,0 +1,24 @@
+server:
+  port: 8210  # Porta onde a aplicação vai rodar
+
+spring:
+  application:
+    name: order-simulator-service  # Nome do serviço na arquitetura de microserviços
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka  # URL do servidor Eureka para registro e descoberta de serviços
+    fetch-registry: true          # Cliente Eureka busca o registro dos serviços
+    register-with-eureka: true    # Cliente Eureka registra este serviço no servidor Eureka
+
+# Configuração para consumo do serviço catalog via API Gateway
+catalog:
+  service:
+    base-url: http://localhost:8710  # URL base do API Gateway que roteia as requisições para o serviço catalog
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info   # Endpoints expostos para monitoramento: /actuator/health e /actuator/info

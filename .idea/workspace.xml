@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31fbb77f-181e-44a1-807f-de6f27f8bf19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/HangmanController/HangmanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/exception/GamesFinishedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/exception/LetterAlreadyInputtedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/HangmanChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/HangmanGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/HangmanGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/HangmanGameStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/WordWithHint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/ItemList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/ItemList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Artist.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Artist.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Artists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Artists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Song.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Song.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Songs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Songs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MentalTech" beforeDir="false" afterPath="$PROJECT_DIR$/../MentalTech" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto-integrador" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-integrador" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="31D7ufANZoalap1nf0MymOyM2mw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.DiscoveryServerApplication.executor": "Run",
+    "Application.ProductCatalogApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31fbb77f-181e-44a1-807f-de6f27f8bf19" name="Changes" comment="" />
+      <created>1755047014300</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755047014300</updated>
+    </task>
+    <servers />
+  </component>
+</project>
