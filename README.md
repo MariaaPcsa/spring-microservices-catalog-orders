@@ -1,90 +1,74 @@
-# Sistema de Microserviços: Catálogo de Produtos & Simulador de Pedidos
+O repositório spring-microservices-catalog-orders é um projeto que demonstra a construção de um sistema de microserviços utilizando tecnologias modernas da stack Java. O foco principal é um catálogo de produtos integrado a um simulador de pedidos, com arquitetura baseada em Spring Boot e Spring Cloud.
 
-> **Stack**: Java 17, Spring Boot 3.3.x, Spring Cloud 2024.0.x, Eureka (Service Discovery), Spring Cloud Gateway (API Gateway), H2 Database (catálogo).
+🛠️ Stack Tecnológica
+
+Java 17
+
+Spring Boot 3.3.x
+
+Spring Cloud 2024.0.x
+
+Eureka (Descoberta de Serviços)
+
+Spring Cloud Gateway (API Gateway)
+
+Banco de Dados H2 (para persistência do catálogo de produtos)
+
+🧱 Módulos do Sistema
+
+O projeto é dividido em quatro módulos principais:
+
+discovery-server
+
+Eureka Server (porta 8761): responsável pela descoberta de serviços.
+
+product-catalog-service
+
+Serviço de catálogo de produtos (porta 8110): oferece operações CRUD básicas para gerenciamento de produtos, com persistência em banco de dados H2.
+
+order-simulator-service
+
+Simulador de pedidos (porta 8210): permite a criação e simulação de pedidos.
+
+api-gateway
+
+Gateway de API: centraliza o acesso aos serviços, roteando as requisições conforme necessário.
+
+📄 Arquitetura Geral
+
+O sistema segue uma arquitetura de microserviços, onde cada módulo é independente e se comunica com os demais através de APIs REST. O Eureka Server facilita a descoberta e registro dos serviços, enquanto o API Gateway atua como ponto de entrada único para as requisições externas.
+
+🚀 Como Executar
+
+Para rodar o sistema localmente, siga os passos abaixo:
+
+Clone o repositório:
+
+git clone https://github.com/MariaaPcsa/spring-microservices-catalog-orders.git
+cd spring-microservices-catalog-orders
 
 
+Compile e execute os serviços:
 
-## Módulos
-- `discovery-server` (porta `8761`): Eureka Server.
-- `product-catalog-service` (porta `8110`): CRUD básico de produtos (`/produtos`) com persistência H2.
-- `order-simulator-service` (porta `8210`): simulação de pedidos (`/pedidos`) sem persistência, consulta o catálogo.
-- `api-gateway` (porta `8710`): expõe todos os endpoints via Gateway.
+Inicie o Eureka Server:
 
-As portas atendem os requisitos: catálogo 8100–8199; pedidos 8200–8299; gateway 8700–8799.
+cd discovery-server
+mvn spring-boot:run
 
-## Como rodar
-1. **Build** (na raiz):
-   ```bash
-   mvn -q -DskipTests package
-   ```
-2. **Suba os serviços** (em 4 terminais):
-   ```bash
-   # 1) Discovery
-   cd discovery-server && mvn spring-boot:run
 
-   # 2) Catálogo
-   cd product-catalog-service && mvn spring-boot:run
+Inicie o Product Catalog Service:
 
-   # 3) Gateway
-   cd api-gateway && mvn spring-boot:run
+cd product-catalog-service
+mvn spring-boot:run
 
-   # 4) Pedidos
-   cd order-simulator-service && mvn spring-boot:run
-   ```
 
-3. **Acesse**
-   - Eureka: http://localhost:8761
-   - H2 Console: http://localhost:8110/h2-console  (JDBC URL: `jdbc:h2:mem:catalogdb` | user `sa` | pass `password`)
-   - API via Gateway:
-     - `GET http://localhost:8710/produtos`
-     - `POST http://localhost:8710/produtos` (body JSON abaixo)
-     - `GET http://localhost:8710/produtos/{id}`
-     - `GET http://localhost:8710/pedidos/produtos` (lista produtos via serviço de pedidos)
-     - `POST http://localhost:8710/pedidos` (simula pedido)
+Inicie o Order Simulator Service:
 
-### Exemplos de requisição
-**Criar produto**
-```http
-POST /produtos
-Content-Type: application/json
+cd order-simulator-service
+mvn spring-boot:run
 
-{
-  "nome": "Mouse",
-  "descricao": "Mouse óptico USB",
-  "preco": 49.90
-}
-```
 
-**Simular pedido**
-```http
-POST /pedidos
-Content-Type: application/json
+Inicie o API Gateway:
 
-{
-  "productIds": [1, 2, 3]
-}
-```
-
-**Resposta do pedido (exemplo)**
-```json
-{
-  "orderId": "c4e1a6ab-40fc-4d2e-9b0b-2b1f2d4e1f3a",
-  "items": [
-    {"productId":1,"nome":"Caneca","preco":29.90},
-    {"productId":2,"nome":"Camiseta","preco":59.90}
-  ],
-  "total": 89.80
-}
-```
-
-## Boas práticas aplicadas
-- **REST**: recursos em plural, códigos de status adequados, `Location` no `POST`.
-- **Validação**: bean validation nas entradas.
-- **Camadas simples**: Controller/Repository.
-- **Configuração externa**: `application.yml` por serviço.
-- **Service Discovery + Gateway**: roteamento via `lb://` e `Path` por contexto (`/produtos`, `/pedidos`).
-- **Observabilidade**: Actuator exposto (health/info).
-
-## Observações
-- O `order-simulator-service` consome o catálogo via **Gateway** (`catalog.service.base-url: http://localhost:8710`). Isso garante que **todos os endpoints** sejam acessados via Gateway, conforme requisito.
-- Dados de exemplo são carregados no catálogo ao subir.
+cd api-gateway
+mvn spring-boot:run
