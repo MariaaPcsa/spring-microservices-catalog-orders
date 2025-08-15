@@ -72,3 +72,23 @@ Inicie o API Gateway:
 
 cd api-gateway
 mvn spring-boot:run
+
+Fiz um front-end para roda localmnente 
+
+Obs: Retira a pasta que esta dentro do projeto e rodar separadamente ou fazer o clone;
+
+🔧 Como rodar o front-end localmente
+
+Clone o repositório:
+
+git clone https://github.com/MariaaPcsa/front-end.git
+cd front-end
+Instale as dependências:
+
+npm install
+Inicie o servidor de desenvolvimento:
+
+npm run dev
+
+
+Respota da requisição no fronte. 
