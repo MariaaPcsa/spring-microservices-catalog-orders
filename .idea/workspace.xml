@@ -23,6 +23,11 @@
       <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Songs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Songs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MentalTech" beforeDir="false" afterPath="$PROJECT_DIR$/../MentalTech" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projeto-integrador" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-integrador" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/front-end" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -48,18 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OrderSimulatorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProductCatalogApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.ApiGatewayApplication.executor": "Run",
+    "Application.DiscoveryServerApplication.executor": "Run",
+    "Application.OrderSimulatorApplication.executor": "Run",
+    "Application.ProductCatalogApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/maria/git/spring-microservices-catalog-orders"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maria\git\spring-microservices-catalog-orders" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="31fbb77f-181e-44a1-807f-de6f27f8bf19" name="Changes" comment="" />
