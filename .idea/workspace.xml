@@ -14,8 +14,6 @@
       <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/HangmanGameStatus.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/java/br/com/dio/hangman_api/model/WordWithHint.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hangman-api/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-catalog-service/src/main/java/com/example/catalog/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-catalog-service/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/ItemList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/ItemList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/components/Main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/index.css" afterDir="false" />
@@ -25,31 +23,6 @@
       <change beforePath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Songs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App-SpotyFree-Hashtg/src/pages/Songs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MentalTech" beforeDir="false" afterPath="$PROJECT_DIR$/../MentalTech" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projeto-integrador" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-integrador" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/api-gateway-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/api-gateway-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/target/discovery-server-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/target/discovery-server-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/src/main/java/com/example/orders/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/src/main/java/com/example/orders/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/OrderSimulatorApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/OrderSimulatorApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/dto/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/dto/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/dto/OrderResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/dto/OrderResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/dto/ProductDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/target/classes/com/example/orders/dto/ProductDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-simulator-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/order-simulator-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/src/main/java/com/example/catalog/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/src/main/java/com/example/catalog/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/ProductCatalogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/ProductCatalogApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/config/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/config/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/dto/ProductRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/dto/ProductRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/product-catalog-service/target/classes/com/example/catalog/repository/ProductRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
