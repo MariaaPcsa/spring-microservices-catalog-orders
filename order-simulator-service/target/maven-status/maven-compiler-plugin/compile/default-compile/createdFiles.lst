@@ -1,4 +1,8 @@
 com\example\orders\dto\ProductDto.class
+com\example\orders\controller\OrderController.class
+com\example\orders\service\CatalogClient.class
 com\example\orders\OrderSimulatorApplication.class
 com\example\orders\dto\OrderItem.class
 com\example\orders\dto\OrderResponse.class
+com\example\orders\dto\OrderRequest.class
+com\example\orders\service\CatalogClient$1.class

@@ -19,20 +19,20 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- Spring Boot dependencies BOM -->
+      <!-- Spring Boot BOM -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.1.3</version> <!-- ajuste conforme sua versão -->
+        <version>3.1.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
 
-      <!-- Spring Cloud dependencies BOM -->
+      <!-- Spring Cloud BOM -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>2022.0.3</version> <!-- versão estável e válida -->
+        <version>2022.0.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -45,5 +45,29 @@
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
   </repositories>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- Plugin de compilação padrão -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <source>17</source>
+            <target>17</target>
+          </configuration>
+        </plugin>
+
+        <!-- Plugin Spring Boot -->
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>3.1.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 
 </project>

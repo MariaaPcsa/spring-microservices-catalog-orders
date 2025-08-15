@@ -14,21 +14,26 @@
   <name>api-gateway</name>
 
   <dependencies>
+    <!-- Lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.30</version> <!-- Use a última disponível -->
       <optional>true</optional>
     </dependency>
 
+    <!-- Spring Cloud Gateway -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-gateway</artifactId>
     </dependency>
+
+    <!-- Eureka Client -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
+
+    <!-- Actuator -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
@@ -37,23 +42,25 @@
 
   <build>
     <plugins>
+      <!-- Compilador Java -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version> <!-- ou a versão que você já usa -->
         <configuration>
-          <source>17</source> <!-- ou a versão do seu JDK -->
-          <target>17</target> <!-- ou a versão do seu JDK -->
-          <fork>true</fork>
+          <source>17</source>
+          <target>17</target>
         </configuration>
       </plugin>
+
+      <!-- Spring Boot Maven Plugin -->
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>3.1.3</version>
+        <configuration>
+          <mainClass>com.example.apigateway.ApiGatewayApplication</mainClass>
+        </configuration>
       </plugin>
     </plugins>
   </build>
-
 
 </project>

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:5173") // Permite requisições do frontend React
 @RestController // Indica que essa classe é um controller REST e que os métodos retornam dados JSON
 @RequestMapping("/produtos") // Mapeia todas as requisições iniciadas com /produtos para esse controller
 public class ProductController {

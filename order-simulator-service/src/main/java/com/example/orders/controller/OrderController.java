@@ -10,6 +10,7 @@ import reactor.core.publisher.Flux;
 
 import java.math.BigDecimal;
 import java.util.List;
+@CrossOrigin(origins = "http://localhost:5173")
 
 @RestController
 @RequestMapping("/pedidos")  // Define a URL base para os endpoints deste controller
