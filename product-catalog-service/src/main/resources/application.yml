@@ -15,11 +15,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-    defer-datasource-initialization: true  # Garante que o data.sql rode após criar as tabelas
+    defer-datasource-initialization: true
 
   sql:
     init:
-      mode: always  # Força a execução de scripts SQL como data.sql
+      mode: always
 
   h2:
     console:
