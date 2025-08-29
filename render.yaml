@@ -1,9 +1,13 @@
 services:
   - type: web
     name: product-catalog-service
-    runtime: docker
     repo: https://github.com/MariaaPcsa/spring-microservices-catalog-orders
+    branch: main
+    runtime: docker
     plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /actuator/health
     envVars:
       - key: DATABASE_URL
         fromDatabase:
