@@ -79,6 +79,8 @@ Obs: Retira a pasta que esta dentro do projeto e rodar separadamente ou fazer o 
 
 🔧 Como rodar o front-end localmente
 
+
+
 Clone o repositório:
 
 git clone https://github.com/MariaaPcsa/front-end.git

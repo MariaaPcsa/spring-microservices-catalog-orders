@@ -1,38 +1,29 @@
-# Stage 1: Build
+# Build stage
 FROM eclipse-temurin:17-jdk AS build
 
-# Diretório de trabalho
 WORKDIR /app
 
-# Copia arquivos de configuração do Maven Wrapper e POM
-COPY mvnw .
-COPY .mvn/ .mvn
-COPY product-catalog-service/pom.xml product-catalog-service/pom.xml
+# Copia Maven Wrapper e arquivos do projeto
+COPY mvnw.cmd ./
+COPY .mvn/ .mvn/
+COPY pom.xml ./
 
 # Baixa dependências
-RUN ./mvnw -f product-catalog-service/pom.xml dependency:go-offline -B
+RUN cmd /c mvnw.cmd dependency:go-offline -B
 
-# Copia todo o módulo para dentro do container
-COPY product-catalog-service/src ./product-catalog-service/src
+# Copia o código-fonte
+COPY src ./src
 
 # Build do JAR
-RUN ./mvnw -f product-catalog-service/pom.xml clean package -DskipTests
+RUN cmd /c mvnw.cmd clean package -DskipTests
 
-# Stage 2: Runtime
+# Stage final
 FROM eclipse-temurin:17-jdk
 
-# Diretório de trabalho
 WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 
-# Copia o JAR final do build
-COPY --from=build /app/product-catalog-service/target/product-catalog-service-1.0.0.jar app.jar
-
-# Porta exposta
+ENV SPRING_PROFILES_ACTIVE=prod
 EXPOSE 8080
 
-# Variáveis de ambiente
-ENV SPRING_PROFILES_ACTIVE=prod
-ENV JAVA_OPTS=""
-
-# Comando para iniciar a aplicação
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]

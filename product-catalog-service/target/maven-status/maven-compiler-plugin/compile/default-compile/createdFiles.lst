@@ -1,8 +1,8 @@
-com\seuprojeto\config\CorsConfig$1.class
+com\example\catalog\config\CorsConfig.class
 com\example\catalog\config\DataLoader.class
 com\example\catalog\repository\ProductRepository.class
-com\seuprojeto\config\CorsConfig.class
 com\example\catalog\dto\ProductRequest.class
+com\example\catalog\config\CorsConfig$1.class
 com\example\catalog\model\Product.class
 com\example\catalog\ProductCatalogApplication.class
 com\example\catalog\controller\ProductController.class
