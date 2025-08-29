@@ -1,3 +1,7 @@
+# ===============================
+# Render configuration file
+# ===============================
+
 services:
   - type: web
     name: product-catalog-service
@@ -9,6 +13,11 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /actuator/health
     envVars:
+      # Definindo Java 17
+      - key: JAVA_VERSION
+        value: 17
+
+      # Variáveis do banco de dados
       - key: DATABASE_URL
         fromDatabase:
           name: catalog-db
@@ -21,8 +30,11 @@ services:
         fromDatabase:
           name: catalog-db
           property: password
+
+      # Variável para Eureka
       - key: EUREKA_SERVER_URL
         value: https://seu-eureka-no-render.onrender.com/eureka
+
     autoDeploy: true
 
 databases:
